@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Articles</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background: #f5f5f5;
+    }
+
+    .container {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      flex-wrap: wrap; /* so it adjusts in small screens */
+    }
+
+    .article {
+      background: white;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      padding: 15px;
+      width: 200px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      transition: background 0.3s ease;
+    }
+
+    .article h2 {
+      font-size: 20px;
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    .article p {
+      font-size: 14px;
+      margin-bottom: 15px;
+      color: #555;
+      text-align: justify;
+    }
+
+    .article button {
+      background: #007BFF;
+      color: white;
+      border: none;
+      padding: 8px 12px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .article button:hover {
+      background: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <h1 style="text-align:center;">Articles</h1>
+  <div class="container">
+    <div class="article">
+      <h2>Article 1</h2>
+      <img src="./article 1.jpeg" width="150" height="150">
+      <p>Capital News" isn't one single publication but refers to various news outlets, such as the Capital Information Newspaper in Hyderabad, India, providing local and national coverage, and Capital TV (capitaltv.in), a Delhi-based internet TV channel focused on Indian social, political, and economic issues. </p>
+      <button onclick="changeColor(this)">Change Background</button>
+    </div>
+    <div class="article">
+      <h2>Article 2</h2>
+            <img src="./article 2.jpeg" width="150" height="150">
+
+      <p>The AI revolution signifies a paradigm shift driven by technologies that enable machines to think, learn, and act like humans, transforming industries and creating new opportunities for efficiency and innovation. It is considered a force comparable to past industrial revolutions, fundamentally altering business operations by automating tasks.</p>
+      <button onclick="changeColor(this)">Change Background</button>
+    </div>
+    <div class="article">
+      <h2>Article 3</h2>
+            <img src="./article3.jpeg" width="150" height="150">
+
+      <p>This was one of the few accurate headlines printed on the day following the sinking of the Titanic. Journalists at some other papers were still in denial that a ship thought to be unsinkable could have failed so catastrophically: The Daily Mirror reported, "Everyone safe", and the Daily Mail, "No lives lost".
+</p>
+      <button onclick="changeColor(this)">Change Background</button>
+    </div>
+    <div class="article">
+      <h2>Article 4</h2>
+            <img src="./article4.jpeg" width="150" height="150">
+
+      <p>Thursday is the 24th anniversary of the September 11, 2001, terrorist attacks.The day after, newspapers around the world captured the sadness, shock, and horror people felt.We compiled international front pages to show what people woke up to on September 12, 2001.The September 11, 2001, terrorist attacks happened 24 years ago.</p>
+      <button onclick="changeColor(this)">Change Background</button>
+    </div>
+  </div>
+
+  <script>
+    function changeColor(button) {
+      // pick random color
+      const colors = ["blue", "orange", "pink", "violet",];
+      const randomColor = colors[Math.floor(Math.random() * colors.length)];
+      button.parentElement.style.background = randomColor;
+    }
+  </script>
+</body>
+</html>
